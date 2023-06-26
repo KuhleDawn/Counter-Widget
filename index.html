@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <div x-data="{ counter: 0 }" style="text-align: center;">
+    <h1>COUNTER WIDGET</h1>
+    <div class="counter" x-text="counter"></div>
+    <div>
+      <button x-on:click="counter++">+</button>
+      <button x-on:click="{if(counter>0) counter--}">-</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
+</head>
+<body style="background-color: rgba(83, 101, 202, 0.671);">
+  <div x-data="{}" x-load="C:\Users\Mabe. T\projects\alpinejs-widgets-intro\counter.html"></div>
+</body>
+</html>
